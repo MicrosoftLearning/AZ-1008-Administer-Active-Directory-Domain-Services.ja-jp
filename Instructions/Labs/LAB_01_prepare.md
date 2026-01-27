@@ -7,6 +7,8 @@ lab:
 
 このガイド付きプロジェクトでは、ドメイン コントローラーの作成、構成、保守の主要な手順について確認します。 また、ドメイン コントローラーを昇格させる機会もあります。
 
+この演習の所要時間は約 **45** 分です。 <!-- update with estimated duration -->
+
 ## セットアップ
 
 (Windows Server や Microsoft Azure サブスクリプションへのアクセスなど) リソース アクセスの要件を減らすために、このガイド付きプロジェクトでは、Windows 10 または Windows 11 マシンを使用して仮想化された環境を実行します。 このプロジェクトで使用する 2 つの Windows Server 2022 Evaluation Edition 仮想マシンをサポートするために、Windows 10 または Windows 11 コンピューターの Hyper-V サブシステムを構成します。 これらのタスクを実行するには、Windows 10 または Windows 11 の Professional または Enterprise エディションが必要です。
@@ -38,8 +40,8 @@ Hyper-V 仮想化ホストとして機能するコンピューターには、少
 10. **[Hyper-V の設定]** ダイアログ ボックスの [サーバー] で、**[仮想マシン]** を選択します。 仮想マシン フォルダーの場所を C:\\VirtualMachines に設定します。
 11. **[Hyper-V の設定]** ダイアログ ボックスの [サーバー] で、**[仮想マシン ハード ディスク]** を選択します。 仮想マシン ハード ディスクの場所を C:\\VirtualMachines\\VHD に設定します。
 12. **[OK]** をクリックして **[Hyper-V の設定]** ダイアログ ボックスを閉じます。
-13. 管理コマンド プロンプトを開き、次のコマンドを実行して NAT ネットワークを作成します。<br>`New-VMSwitch -SwitchName “NATSwitch” -SwitchType Internal`<br>`New-NetIPAddress -IPAddress 10.10.10.1 -PrefixLength 24 -InterfaceAlias “vEthernet (NATSwitch)”`<br>`New-NetNat -Name “NATNetwork” –InternalIPInterfaceAddressPrefix “10.10.10.0/24”`
-14. 管理コマンド プロンプトを閉じます。
+13. 管理者アクセス権を使用して PowerShell を開き、次のコマンドを実行して NAT ネットワークを作成します。<br>`New-VMSwitch -SwitchName “NATSwitch” -SwitchType Internal`<br>`New-NetIPAddress -IPAddress 10.10.10.1 -PrefixLength 24 -InterfaceAlias “vEthernet (NATSwitch)”`<br>`New-NetNat -Name “NATNetwork” –InternalIPInterfaceAddressPrefix “10.10.10.0/24”`
+14. PowerShell を閉じます。
 
 ## Windows Server ドメイン コントローラー仮想マシンを作成する
 
@@ -81,7 +83,7 @@ Hyper-V 仮想化ホストとして機能するコンピューターには、少
         
         
         1.  IP アドレス: 10.10.10.10
-        2.  サブネット マスク:255.255.255.0
+        2.  サブネット マスク: 255.255.255.0
         3.  デフォルト ゲートウェイ: 10.10.10.1
     2.  次の DNS サーバー アドレスを使用する:
         
@@ -151,7 +153,7 @@ Hyper-V 仮想化ホストとして機能するコンピューターには、少
         
         
         1.  IP アドレス: 10.10.10.20
-        2.  サブネット マスク:255.255.255.0
+        2.  サブネット マスク: 255.255.255.0
         3.  デフォルト ゲートウェイ: 10.10.10.1
     2.  次の DNS サーバー アドレスを使用する:
         
