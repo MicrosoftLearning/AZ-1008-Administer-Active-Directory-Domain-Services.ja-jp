@@ -2,7 +2,17 @@
 lab:
   title: 演習 - パスワード ポリシーを管理する
   module: Guided Project – Administer Active Directory Domain Services
+  description: ドメインときめ細かいパスワード ポリシーを構成して、標準ユーザーと管理者に異なるパスワード要件を適用します。 オブジェクトの回復をサポートするため、Active Directory のごみ箱も有効にします。
+  duration: 10 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Group Policy
+    - Password Policy
+    - Fine-Grained Password Policy
+    - Active Directory Recycle Bin
 ---
+
 この演習では、パスワード ポリシーに関連するグループ ポリシー項目を構成します。 これには、ドメイン パスワード ポリシーの構成、ドメイン管理者グループに対するより厳しいパスワード ポリシーの作成、Active Directory のごみ箱の有効化が含まれます。
 
 この演習の所要時間は約 **10** 分です。 <!-- update with estimated duration -->

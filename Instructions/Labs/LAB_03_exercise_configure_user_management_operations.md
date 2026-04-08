@@ -2,7 +2,17 @@
 lab:
   title: '演習 - ユーザー管理操作を構成する '
   module: Guided Project – Administer Active Directory Domain Services
+  description: 組織単位、ユーザー、セキュリティ グループを作成して、Active Directory で ID と委任を管理します。 保護されたユーザー メンバーシップの構成、パスワード リセットのアクセス許可の委任、ユーザー属性の設定、アカウント ライフサイクル アクション (無効化やパスワード リセットなど) の実行を行います。
+  duration: 25 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Active Directory Users and Computers
+    - Organizational Units
+    - User and Group Management
+    - Delegated Administration
 ---
+
 この演習では、ユーザー管理操作を実行します。
 
 この演習の完了に要する時間は約 **25** 分です。 <!-- update with estimated duration -->
