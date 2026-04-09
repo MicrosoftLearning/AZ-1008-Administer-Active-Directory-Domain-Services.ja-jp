@@ -2,7 +2,17 @@
 lab:
   title: 演習 - ドメイン コントローラー操作を構成する
   module: Guided Project – Administer Active Directory Domain Services
+  description: Active Directory Domain Services をメンバー サーバーにインストールし、既存のドメインで追加のドメイン コントローラーに昇格させます。 FSMO ロールを転送し、サイトおよび関連付けられたサブネットを作成して Active Directory のサイトとサービスを構成します。
+  duration: 15 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Active Directory Domain Services
+    - Domain Controller Promotion
+    - FSMO Roles
+    - Active Directory Sites and Services
 ---
+
 この演習では、サーバーをドメイン コントローラーに昇格し、FSMO ロールを新しいドメイン コントローラーに移転し、サイトを作成して、サブネットをサイトに追加します。
 
 この演習の所要時間は約 **15** 分です。 <!-- update with estimated duration -->

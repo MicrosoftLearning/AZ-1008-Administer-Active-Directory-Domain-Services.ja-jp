@@ -2,7 +2,17 @@
 lab:
   title: 演習 - セキュリティ設定を構成する
   module: Guided Project – Administer Active Directory Domain Services
+  description: ドメイン コントローラー ポリシーで NTLM 認証を制限し、OU のアカウント管理監査を有効にして、ディレクトリ セキュリティを強化します。 また、指定したグループのサービスとしてのログオンを拒否するようにユーザー権利の割り当てを構成します。
+  duration: 10 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Group Policy
+    - NTLM Security
+    - Audit Policy
+    - User Rights Assignment
 ---
+
 この演習では、ドメイン アカウントに対する NTLM 認証の無効化、アカウント管理アクティビティの監査、セキュリティ グループのメンバーに対するサービスとしてのログオンの拒否など、セキュリティに関連する設定を構成します。
 
 この演習の所要時間は約 **10** 分です。 <!-- update with estimated duration -->
