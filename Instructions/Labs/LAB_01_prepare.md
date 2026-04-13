@@ -2,7 +2,17 @@
 lab:
   title: 準備
   module: Guided Project – Administer Active Directory Domain Services
+  description: Hyper-V ネットワークをインストールし、それとストレージの設定を構成して、ガイド付きプロジェクト用に Windows 11 ホストを準備します。 2 台の Windows Server 2022 仮想マシンをデプロイして構成し、1 台を新しい Active Directory ドメイン コントローラーに昇格させ、2 台目のサーバーをドメインに参加させます。
+  duration: 45 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Hyper-V
+    - Windows Server 2022
+    - Active Directory Domain Services
+    - Domain Controller Deployment
 ---
+
 ## プロジェクトの概要
 
 このガイド付きプロジェクトでは、ドメイン コントローラーの作成、構成、保守の主要な手順について確認します。 また、ドメイン コントローラーを昇格させる機会もあります。
